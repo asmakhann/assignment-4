@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav h2{
+    font-family:  'Playfair Display', serif;
+    color:white;
+
+}
+nav img {
+    border: none;
+   margin: 0;
+    padding: 0;
+    border: 0;
+   
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+
+    
+}
+
+nav{
+    width: 100%;
+    top: 0px;
+       background-color: #ba181b;
+       font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    
+}
+
+
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    
+}
+a{
+    text-decoration: none;
+     color: white;
+     display: flex;
+    transition: 1s;
+    
+    
+}
+a:hover{
+    background-color: #e5383b;
+    color: white;
+    border: 1px solid #e5383b ;
+   transition-duration: 0.5s;
+    transform: scale(1.02);
+    
+    
+}
+
+li{
+    margin: 14px 0px;
+
+    font-family: 'Playfair Display', serif;
+    font-size: large;
+
+}
+@media screen and (max-width:580px) {
+    nav,ul{
+        flex-direction: column;
+    }
+    
+
+
+ ul{ 
+     flex-direction: column; 
+     align-items: center; 
+ } 
+}
+
+
+/* ending of nav bar */
+
+#sliding{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 550px ;
+ 
+    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.i{
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    
+   
+    background-image: url("https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2021/09/16/Gateway_Quote_A4_09-16.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+      float: left;
+    animation: 20s slider infinite ;
+}
+@keyframes slider{
+    
+
+    30%{
+        background-image: url("https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2021/09/14/Gateway_Quote_A1_09-14.jpg");
+        width: 100%;
+        height: auto;
+        margin: 0%;
+       
+        
+        }
+
+   60%{
+    background-image: url("https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2021/09/16/Gateway_Quote_A1_09-16.jpg");
+    width: 100vw;
+    height: 550px;
+    margin: 0%;
+    
+
+   }
+   100%{
+    background-image: url("https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2021/09/14/Gateway_Quote_A2_09-14_.jpg");
+    width: 100vw;
+    height: 550px;
+    margin: 0%;
+   
+   
+       
+   }
+
+}
+
+h1{
+    
+    font-style: italic;
+    font-family: Poynter,Georgia,serif;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1em;
+    margin: 40px auto 0;
+}
+
+
+
+section{
+    width: 75vw;
+    margin: 50px auto;
+     display: flex; 
+     flex-wrap: wrap; 
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+figure{
+    width: 300px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: 15px;
+    transition: 200ms;
+    transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 4px 4px 8px  rgb(104, 104, 104);
+}
+
+
+figure img{
+    height: 230px;
+    width: 85%;
+   padding: 8px;
+    
+}
+
+h1{
+    font-weight: lighter;
+}
+
+h2{
+    font-size: 1.1rem;
+}
+
+button{
+    font-size: 20px;
+    padding: 4px 12px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: background-color 300ms;
+}
+button:hover{
+    background-color: #277da1;
+    color: white;
+}
+
+figure:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+
+/* contact us */
+
+
+.container{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+ .container:after{ 
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("https://images.unsplash.com/photo-1534548974179-ecda905ac8c5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGFpciUyMGJhbG9vbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("https://images.unsplash.com/photo-1534548974179-ecda905ac8c5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGFpciUyMGJhbG9vbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h3{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h3:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+} 
